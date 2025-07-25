@@ -1,0 +1,631 @@
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7ff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #f5f7ff;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.subtext {
+  font-size: 12px;
+  color: gray;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.cart {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+/* আলাদা অক্ষরের রঙ */
+.l1 { color: #FF5733; } /* f */
+.l2 { color: #FF8D1A; } /* a */
+.l3 { color: #FFC300; } /* u */
+.l4 { color: #DAF7A6; } /* g */
+.l5 { color: #33FFBD; } /* e */
+.l6 { color: #3380FF; } /* t */
+
+.n1 { color: #FF1493; } /* H */
+.n2 { color: #FF69B4; } /* o */
+.n3 { color: #C71585; } /* m */
+.n4 { color: #DB7093; } /* e */
+
+.n5 { color: #800080; } /* S */
+.n6 { color: #8A2BE2; } /* h */
+.n7 { color: #9370DB; } /* o */
+.n8 { color: #BA55D3; } /* p */
+
+.n9  { color: #20B2AA; } /* A */
+.n10 { color: #40E0D0; } /* b */
+.n11 { color: #5F9EA0; } /* o */
+.n12 { color: #4682B4; } /* u */
+.n13 { color: #008080; } /* t */
+.n14 { color: #00CED1; } /* U */
+.n15 { color: #48D1CC; } /* s */
+
+.c1 { color: #DC143C; } /* C */
+.c2 { color: #B22222; } /* a */
+.c3 { color: #FF4500; } /* r */
+.c4 { color: #A52A2A; } /* t */
+.c5 { color: #008000; } /* $ */
+.c6 { color: #006400; } /* 5 */
+.c7 { color: #2E8B57; } /* 6 */
+
+.cart-icon {
+  margin-right: 5px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  background-color: #f9fafc;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.hero-content .black {
+  color: #000000;
+}
+
+.hero-content .orange {
+  color: #f15a24;
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: #6c757d;
+  line-height: 1.7;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+/* Reset & body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fafc;
+  color: #333;
+}
+
+/* Our Plants Section */
+.our-plants {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #f9fafc;
+}
+
+.our-plants h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.orange {
+  color: #f15a24;
+}
+
+.black {
+  color: #000;
+}
+
+.description {
+  font-size: 15px;
+  color: #6c757d;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+/* Grid layout */
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Card box */
+.plant-card {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.plant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+/* Image */
+.plant-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.plant-card h3 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+}
+
+.plant-card p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  margin: 8px 0 12px;
+}
+
+/* Button */
+.plant-card button {
+  background-color: #f15a24;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.plant-card button:hover {
+  background-color: #d64b1c;
+}
+/* Our Plants Section */
+.our-plants {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #f9fafc;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.our-plants h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.our-plants .orange {
+  color: #f15a24;
+}
+
+.our-plants .black {
+  color: #000;
+}
+
+.our-plants .description {
+  font-size: 15px;
+  color: #6c757d;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+/* Outer box that contains all plants */
+.plant-box {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid for plant cards */
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+}
+
+.plant-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: default;
+}
+
+.plant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(241, 90, 36, 0.3);
+}
+
+.plant-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.plant-card h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.plant-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.plant-card button {
+  background-color: #f15a24;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.plant-card button:hover {
+  background-color: #d94a1c;
+}
+
+
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f6f7fa;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/*  ফুল ও উদ্ভিদের সেকশন */
+.flower-lover-section {
+  background-color: #f6f7fa;
+  padding: 40px 20px;
+}
+
+/*  ছবির ও লেখার জন্য ফ্লেক্স লে-আউট */
+.top-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  ছবির জন্য */
+.image-section {
+  position: relative;
+  flex: 1 1 400px;
+  min-width: 300px;
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+/* front  */
+
+
+
+  .badge.top-right {
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+/* 🏷 ব্যাজ (উপরে ডান পাশে) */
+.badge.top-right {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 80px;
+  height: 80px;
+}
+
+/*  লেখার অংশ */
+.text-section {
+  flex: 1 1 400px;
+  min-width: 300px;
+}
+
+.text-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2e2e2e;
+}
+
+.text-section ul {
+  padding-left: 20px;
+}
+
+.text-section li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/*  মোবাইলের জন্য রেসপনসিভ ডিজাইন */
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-section {
+    padding-top: 20px;
+  }
+
+  .badge.top-right {
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+.deal-section {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.deal-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.deal-highlight {
+  color: orange;
+}
+
+.deal-subtitle {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.deal-layout {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-end; /* এই লাইনে Zabo নিচে নামবে */
+  flex-wrap: wrap;
+}
+
+.deal-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.deal-right {
+  flex: 2;
+  min-width: 300px;
+}
+
+.deal-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.deal-small {
+  height: 200px;
+}
+
+.deal-large {
+  height: 420px;
+}
+
+.deal-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.deal-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.deal-info a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.deal-info a:hover {
+  background: white;
+  color: black;
+}
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+}
+
+/* Hero Section */
+.fs-hero {
+  background: url('images/background.jpg') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fs-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.fs-overlay h1 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.fs-subscribe-form input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+
+.fs-subscribe-form button {
+  padding: 10px 20px;
+  background-color: #f15a29;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: white;
+  padding: 40px 20px;
+}
+
+.fs-footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fs-footer-left {
+  flex: 1;
+  min-width: 200px;
+}
+
+.fs-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.fs-footer-left p {
+  color: #333;
+  font-size: 14px;
+}
+
+.fs-footer-links {
+  display: flex;
+  gap: 40px;
+  flex: 2;
+  min-width: 300px;
+  justify-content: space-between;
+}
+
+.fs-footer-links a {
+  display: block;
+  color: #333;
+  margin-bottom: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.fs-footer-links a:hover {
+  text-decoration: underline;
+}
+
+.fs-social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.fs-social-icons img {
+  width: 24px;
+  height: 24px;
+}
